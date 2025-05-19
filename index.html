@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RCB Fan Hub</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Arial', sans-serif; line-height: 1.6; background-color: #d7deecdc; color: #333; }
+
+        header { background-color: #ffffff; color: #ff0000; padding: 20px 0; text-align: center; }
+        header img.logo { width: 120px; margin-bottom: 10px; }
+        header h1 { font-size: 2.5em; margin: 0; }
+
+        nav ul {
+            list-style: none;
+            padding: 10px 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #f0f0f0;
+            color: #000000;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 20px;
+            transition: background-color 0.3s, color 0.3s;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul li a:hover {
+            background-color: #ffd700; /* Gold on hover */
+            color: #000;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+        }
+
+        section:hover {
+            background-color: #d5eff2;
+            color: #200505;
+            transform: scale(1.02);
+        }
+
+        section:hover h2 {
+            color: #121005;
+        }
+
+        section:hover a {
+            color: #ffd700;
+        }
+
+        h2 { color: #110e0e; font-size: 2em; margin-bottom: 10px; }
+
+        .player-profiles {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .player-profile {
+            text-align: center;
+            margin: 10px;
+            width: 150px;
+        }
+
+        .player-profile img {
+            width: 100%;
+            border-radius: 50%;
+        }
+
+        #match-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        #match-list li {
+            margin: 10px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #ffffff;
+            color: #ff0000;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="rcb-logo.jpg" alt="RCB Logo" class="logo">
+        <h1>RCB Fan Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#matches">Matches</a></li>
+                <li><a href="#stats">Stats</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#fan-zone">Fan Zone</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to the RCB Fan Hub</h2>
+        <p>Your one-stop destination for all things Royal Challengers Bangalore!</p>
+    </section>
+
+    <section id="team">
+        <h2>Meet the Team</h2>
+        <div class="player-profiles">
+            <div class="player-profile">
+                <img src="virat.png" alt="Virat Kohli">
+                <h3>Virat Kohli</h3>
+                <p>Batsman</p>
+            </div>
+            <div class="player-profile">
+                <img src="Faf.jpg" alt="Faf du Plessis">
+                <h3>Faf du Plessis</h3>
+                <p>Batsman</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="matches">
+        <h2>Upcoming Matches</h2>
+        <ul id="match-list">
+            <li>May 23, 2025 - Sunrisers Hyderabad vs RCB at 7:00 AM PDT</li>
+            <li>May 27, 2025 - RCB vs Lucknow Super Giants at 7:00 AM PDT</li>
+        </ul>
+    </section>
+
+    <section id="stats">
+        <h2>Team Statistics</h2>
+        <p>RCB is currently at the top of the IPL 2025 points table with 17 points, nearly assured of a playoff spot. The recent match against KKR was washed out due to rain, but RCB's consistent performance this season has been commendable. <a href="https://economictimes.indiatimes.com/news/sports/royal-challengers-bengaluru-vs-kolkata-knight-riders-key-players-rcb-vs-kkr-ipl-2025-stats-records-virat-kohli-rajat-patidar-bhuvneshwar-kumar-ajinkya-rahane-harshit-rana-russell/articleshow/121235339.cms">Read more</a></p>
+    </section>
+
+    <section id="news">
+        <h2>Latest News</h2>
+        <div id="news-feed">
+            <article>
+                <h3>AB de Villiers to Attend IPL 2025 Final if RCB Qualifies</h3>
+                <p>Former RCB star AB de Villiers has promised to attend the IPL 2025 final in person if RCB qualifies, aiming to share the moment with long-time teammate Virat Kohli. <a href="https://indiatimes.com/trending/ab-de-villiers-coming-to-lift-ipl-2025-trophy-with-virat-kohli-batter-promises-india-visit-if-rcb-reaches-the-final-659105.html">Read more</a></p>
+            </article>
+            <article>
+                <h3>Middlesex Expresses Interest in Virat Kohli</h3>
+                <p>Middlesex cricket club has shown interest in signing recently retired Indian Test cricket legend Virat Kohli for a potential stint at Lord's. <a href="https://www.theguardian.com/sport/2025/may/17/middlesex-confirm-interest-in-virat-kohli-cricket">Read more</a></p>
+            </article>
+        </div>
+    </section>
+
+    <section id="fan-zone">
+        <h2>Fan Zone</h2>
+        <p>Join the RCB fan community! Participate in polls, share your match predictions, and engage with fellow fans.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 RCB Fan Hub. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
